@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Ressources/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Merriweather:ital@0;1&display=swap">
+    <link rel="shortcut icon" type="image/x-icon" href="./Ressources/Images/favicon.ico"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Contact | Café Bio le Vivarium</title>
+</head>
+<body>
+<!-- Banner section -->
+
+<header class="flex-container">
+    <a href="index.html"><img src="./Ressources/Images/logo nom.jpg" alt="logo viv"></a>
+    <Nav>
+        <button class="nav-button" onclick="location.href='menu.html'">Menu</button>
+        <button class="nav-button" onclick="location.href='contact.html'">Contact</button>
+        <button class="nav-button" onclick="location.href='benevoles.html'">Bénévoles</button>
+    </Nav>
+</header>
+
+
+<!-- Accueil -->
+<div id="accueil" class="flex-container">
+    <div class="content">
+        <h1 class="name">CONTACT</h1>
+    </div>
+</div>
+
+
+<!-- Facebook et Instagram -->
+<div id="media" class="media">
+    <div class="media-content">
+        <h1>Suivez-nous sur nos réseaux sociaux!</h1>
+        <span><a href="https://www.instagram.com/vivarium.cafe/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></span>
+        <span><a href="https://www.facebook.com/cafebiolevivarium?mibextid=qi2Omg&rdid=uP8XHKVeZDD6xVvA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg7X6naunZSQNas7d%2F%3Fmibextid%3Dqi2Omg" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></span>
+    </div>
+</div>
+
+<!-- Bénévoles -->
+
+
+<!-- Section formulaire -->
+    <div class="contact-form">
+        <h2>Prenez contact avec nous:</h2>
+        <form action="send_mail.php" method="post">
+            <div class="input-row">
+                <input type="text" name="name" placeholder="Nom" required>
+                <input type="email" name="email" placeholder="Courriel" required>
+            </div>
+            <textarea name="message" placeholder="Message" required></textarea>
+            <div class="input-row">
+                <label for="captcha">6 + 4 = </label>
+                <input type="text" name="captcha" id="captcha" placeholder="Réponse" required>
+                <button type="submit">Envoyer</button>
+            </div>
+        </form>
+    </div>
+
+
+    
+<!-- Footer -->
+<div id="footer" class="footer">
+    <div class="footer-content">
+        <h3>Café Bio le Vivarium</h3>
+        <p>Université de Montréal, Campus MIL</p>
+        <p>1375, Ave Thérèse-Lavoie-Roux, Outremont (QC) H2V0B3</p>
+        <p>Local B-0110.2</p>
+    </div>
+    <div class="footer-content">
+        <h3>Nos réseaux sociaux</h3>
+        <p>cafe.bio.udem@gmail.com</p>
+        <p><a href="https://www.instagram.com/vivarium.cafe/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></p>
+        <p><a href="https://www.facebook.com/cafebiolevivarium?mibextid=qi2Omg&rdid=uP8XHKVeZDD6xVvA&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2Fg7X6naunZSQNas7d%2F%3Fmibextid%3Dqi2Omg" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></p>
+    </div>
+    <div class="footer-content">
+        <img src="./Ressources/Images/logo viv.jpg" alt="logo viv">
+    </div>
+</div>
+<div class="copyright">
+    <h5>&copy Café Bio le Vivarium 2024</h5>
+</div>
+
+</body>
+</html>
