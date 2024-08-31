@@ -258,8 +258,9 @@ nav span {
     }
 
     header {
-        height: auto;
+        height: 80px;
         padding: 10px 0;
+        justify-content: space-around;
     }
 
     header img {
@@ -273,13 +274,15 @@ nav span {
         display: flex;
         flex-direction: column;
         gap: 5px;
+        justify-content: space-around;
     }
 
     nav .nav-button {
-        width: 80px;
+        width: auto;
         height: 35px;
         margin-right: 0;
         font-size: 0.9em;
+        padding: 10px 20px;
     }
 
     nav span {
