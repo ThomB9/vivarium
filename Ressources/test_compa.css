@@ -316,3 +316,60 @@ nav span {
         height: 200px;
     }
 }
+
+/* Limiter la largeur des sections */
+#accueil, #mission, #menu, #footer {
+    max-width: 90%;
+    margin: 0 auto;
+}
+
+#accueil .content {
+    margin: auto;
+    text-align: center;
+}
+
+#mission, #menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission-content, .menu-content {
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+#menu ul {
+    padding: 0;
+    margin: 20px auto;
+    list-style: none;
+}
+
+#footer {
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Ajustement du bouton dans la section mission */
+.mission-button, .menu-button {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Media Queries pour améliorer la réactivité */
+@media (max-width: 768px) {
+    header, nav, .mission-content, .menu-content, #footer {
+        width: 100%;
+    }
+
+    #menu {
+        flex-direction: column;
+    }
+
+    #footer .footer-content {
+        width: 90%;
+        margin-bottom: 20px;
+    }
+}
+
